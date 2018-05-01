@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		903530682098570C00EF318A /* XCViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 903530672098570C00EF318A /* XCViewController.m */; };
 		90F02B7620984B7700CFCFE2 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 90F02B7520984B7700CFCFE2 /* AppDelegate.m */; };
 		90F02B7920984B7700CFCFE2 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 90F02B7820984B7700CFCFE2 /* ViewController.m */; };
 		90F02B7C20984B7700CFCFE2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 90F02B7A20984B7700CFCFE2 /* Main.storyboard */; };
@@ -15,6 +16,9 @@
 		90F02B8420984B7800CFCFE2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 90F02B8320984B7800CFCFE2 /* main.m */; };
 		90F02B8E20984B7800CFCFE2 /* XCLeakDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 90F02B8D20984B7800CFCFE2 /* XCLeakDemoTests.m */; };
 		90F02B9920984B7800CFCFE2 /* XCLeakDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 90F02B9820984B7800CFCFE2 /* XCLeakDemoUITests.m */; };
+		90F02BA820984CDC00CFCFE2 /* NSObject+Leak.m in Sources */ = {isa = PBXBuildFile; fileRef = 90F02BA720984CDC00CFCFE2 /* NSObject+Leak.m */; };
+		90F02BAB2098533300CFCFE2 /* UIViewController+Leak.m in Sources */ = {isa = PBXBuildFile; fileRef = 90F02BAA2098533300CFCFE2 /* UIViewController+Leak.m */; };
+		90F02BAE209854AD00CFCFE2 /* UINavigationController+Leak.m in Sources */ = {isa = PBXBuildFile; fileRef = 90F02BAD209854AD00CFCFE2 /* UINavigationController+Leak.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +39,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		903530662098570C00EF318A /* XCViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XCViewController.h; sourceTree = "<group>"; };
+		903530672098570C00EF318A /* XCViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XCViewController.m; sourceTree = "<group>"; };
 		90F02B7120984B7700CFCFE2 /* XCLeakDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XCLeakDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		90F02B7420984B7700CFCFE2 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		90F02B7520984B7700CFCFE2 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -51,6 +57,12 @@
 		90F02B9420984B7800CFCFE2 /* XCLeakDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = XCLeakDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		90F02B9820984B7800CFCFE2 /* XCLeakDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XCLeakDemoUITests.m; sourceTree = "<group>"; };
 		90F02B9A20984B7900CFCFE2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		90F02BA620984CDC00CFCFE2 /* NSObject+Leak.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+Leak.h"; sourceTree = "<group>"; };
+		90F02BA720984CDC00CFCFE2 /* NSObject+Leak.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Leak.m"; sourceTree = "<group>"; };
+		90F02BA92098533300CFCFE2 /* UIViewController+Leak.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIViewController+Leak.h"; sourceTree = "<group>"; };
+		90F02BAA2098533300CFCFE2 /* UIViewController+Leak.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+Leak.m"; sourceTree = "<group>"; };
+		90F02BAC209854AD00CFCFE2 /* UINavigationController+Leak.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UINavigationController+Leak.h"; sourceTree = "<group>"; };
+		90F02BAD209854AD00CFCFE2 /* UINavigationController+Leak.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UINavigationController+Leak.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,11 +117,19 @@
 				90F02B7520984B7700CFCFE2 /* AppDelegate.m */,
 				90F02B7720984B7700CFCFE2 /* ViewController.h */,
 				90F02B7820984B7700CFCFE2 /* ViewController.m */,
+				903530662098570C00EF318A /* XCViewController.h */,
+				903530672098570C00EF318A /* XCViewController.m */,
 				90F02B7A20984B7700CFCFE2 /* Main.storyboard */,
 				90F02B7D20984B7800CFCFE2 /* Assets.xcassets */,
 				90F02B7F20984B7800CFCFE2 /* LaunchScreen.storyboard */,
 				90F02B8220984B7800CFCFE2 /* Info.plist */,
 				90F02B8320984B7800CFCFE2 /* main.m */,
+				90F02BA620984CDC00CFCFE2 /* NSObject+Leak.h */,
+				90F02BA720984CDC00CFCFE2 /* NSObject+Leak.m */,
+				90F02BA92098533300CFCFE2 /* UIViewController+Leak.h */,
+				90F02BAA2098533300CFCFE2 /* UIViewController+Leak.m */,
+				90F02BAC209854AD00CFCFE2 /* UINavigationController+Leak.h */,
+				90F02BAD209854AD00CFCFE2 /* UINavigationController+Leak.m */,
 			);
 			path = XCLeakDemo;
 			sourceTree = "<group>";
@@ -262,8 +282,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				90F02BAE209854AD00CFCFE2 /* UINavigationController+Leak.m in Sources */,
 				90F02B7920984B7700CFCFE2 /* ViewController.m in Sources */,
 				90F02B8420984B7800CFCFE2 /* main.m in Sources */,
+				90F02BAB2098533300CFCFE2 /* UIViewController+Leak.m in Sources */,
+				903530682098570C00EF318A /* XCViewController.m in Sources */,
+				90F02BA820984CDC00CFCFE2 /* NSObject+Leak.m in Sources */,
 				90F02B7620984B7700CFCFE2 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

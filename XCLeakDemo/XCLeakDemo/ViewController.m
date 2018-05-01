@@ -7,12 +7,9 @@
 //
 
 #import "ViewController.h"
+#import "XCViewController.h"
 
-typedef void (^testLeak)();
 @interface ViewController ()
-
-@property (nonatomic, copy) testLeak leak;
-@property (nonatomic, strong) NSString *name;
 
 @end
 
@@ -21,13 +18,6 @@ typedef void (^testLeak)();
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
-    
-    
-    // 内存泄漏代码
-    self.leak = ^{
-        self.name = @"xiaocai";
-    };
-    
 }
 
 
@@ -36,5 +26,13 @@ typedef void (^testLeak)();
     // Dispose of any resources that can be recreated.
 }
 
+- (IBAction)leakClick {
+    XCViewController *vc = [[XCViewController alloc] init];
+    [self.navigationController pushViewController:vc animated:YES];
+}
+
+- (void)dealloc{
+    NSLog(@"dealloc---one");
+}
 
 @end
